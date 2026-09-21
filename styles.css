@@ -1,5 +1,53 @@
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#f4f6f8;color:#17202a}.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:20px;box-shadow:0 4px 18px #00000008}.auth{min-height:100vh;display:grid;place-items:center;padding:20px;background:linear-gradient(135deg,#102a43,#1f5f8b)}.auth-card{width:min(420px,100%)}.brand{font-weight:800;font-size:25px;margin-bottom:22px}h1,h2{margin-top:0}.field{margin:13px 0}.field label,.businessbar label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}.field input,.field select,.field textarea,.businessbar select{width:100%;padding:11px 12px;border:1px solid #d1d5db;border-radius:10px;font:inherit}.btn{border:0;border-radius:10px;padding:11px 16px;font-weight:700;cursor:pointer}.primary{background:#1261a0;color:#fff}.secondary{background:#eef2f6}.danger{background:#fee2e2;color:#991b1b}.appbar{background:#102a43;color:#fff;padding:14px 22px;display:flex;justify-content:space-between;align-items:center}.wrap{max-width:1180px;margin:25px auto;padding:0 18px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.metric .label{font-size:13px;color:#667085}.metric .value{font-size:26px;font-weight:800;margin-top:7px}.positive{color:#16803c}.negative{color:#b42318}.toolbar{display:flex;gap:10px;justify-content:space-between;align-items:center;margin:20px 0 12px;flex-wrap:wrap}.businessbar{display:grid;grid-template-columns:180px 1fr auto;gap:10px;align-items:center;margin:0 0 18px;padding:14px;background:#fff;border:1px solid #e5e7eb;border-radius:14px}.table-wrap{overflow:auto}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:12px 10px;border-bottom:1px solid #eee;text-align:left;font-size:14px}.tag{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:700}.in{background:#e7f6ec;color:#176b35}.out{background:#fff0e5;color:#9a4b00}.empty{text-align:center;color:#667085;padding:30px}.modal{position:fixed;inset:0;background:#0008;display:grid;place-items:center;padding:20px}.modal .card{width:min(500px,100%)}.error{color:#b42318;font-size:13px;margin-top:8px}.notice{padding:10px 12px;background:#fff7ed;color:#9a3412;border-radius:10px;font-size:13px;margin:14px 0}.switchline{margin-top:18px}.switch{color:#1261a0;cursor:pointer;font-weight:700}.top-actions,.actions{display:flex;gap:8px;align-items:center}.actions{justify-content:flex-end;margin-top:16px}.small{font-size:12px;color:#667085}.user-name{color:#dbeafe}@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.businessbar{grid-template-columns:1fr}}@media(max-width:520px){.grid{grid-template-columns:1fr}.appbar{padding:12px 14px}.wrap{padding:0 12px}.metric .value{font-size:22px}.user-name{display:none}}
-
-
-.chart-card{overflow:hidden}.chart-wrap{width:100%;overflow-x:auto;padding:6px 4px 0}.capital-chart{display:block;width:100%;min-width:680px;height:auto;overflow:visible}.capital-chart text{font:12px system-ui,-apple-system,Segoe UI,sans-serif;fill:#64748b}.gridline{stroke:#e5e7eb;stroke-width:1}.axis{stroke:#cbd5e1;stroke-width:1}.line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.income-line{stroke:#16834b}.return-line{stroke:#d97706}.income-point{fill:#16834b;stroke:#fff;stroke-width:2}.return-point{fill:#d97706;stroke:#fff;stroke-width:2}.chart-legend{display:flex;gap:22px;flex-wrap:wrap;padding:4px 8px 12px;font-size:13px;color:#475569}.legend-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px}.legend-dot.income{background:#16834b}.legend-dot.return{background:#d97706}.chart-empty{padding:32px 12px;color:#64748b;text-align:center;border:1px dashed #cbd5e1;border-radius:12px}
-@media (max-width:700px){.capital-chart{min-width:620px}.chart-legend{font-size:12px}}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#f4f6f8;color:#17202a}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:20px;box-shadow:0 4px 18px #00000008}
+.auth{min-height:100vh;display:grid;place-items:center;padding:20px;background:linear-gradient(135deg,#102a43,#1f5f8b)}
+.auth-card{width:min(420px,100%)}
+.brand{font-weight:800;font-size:25px;margin-bottom:22px}
+h1,h2{margin-top:0}
+.field{margin:13px 0}
+.field label,.businessbar label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
+.field input,.field select,.field textarea,.businessbar select{width:100%;padding:11px 12px;border:1px solid #d1d5db;border-radius:10px;font:inherit}
+.btn{border:0;border-radius:10px;padding:11px 16px;font-weight:700;cursor:pointer}
+.btn:disabled{opacity:.6;cursor:not-allowed}
+.primary{background:#1261a0;color:#fff}
+.secondary{background:#eef2f6}
+.danger{background:#fee2e2;color:#991b1b}
+.appbar{background:#102a43;color:#fff;padding:14px 22px;display:flex;justify-content:space-between;align-items:center}
+.wrap{max-width:1180px;margin:25px auto;padding:0 18px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.metric .label{font-size:13px;color:#667085}
+.metric .value{font-size:26px;font-weight:800;margin-top:7px}
+.positive{color:#16803c}.negative{color:#b42318}
+.toolbar{display:flex;gap:10px;justify-content:space-between;align-items:center;margin:20px 0 12px;flex-wrap:wrap}
+.businessbar{display:grid;grid-template-columns:180px 1fr auto;gap:10px;align-items:center;margin:0 0 18px;padding:14px;background:#fff;border:1px solid #e5e7eb;border-radius:14px}
+.table-wrap{overflow:auto}.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:12px 10px;border-bottom:1px solid #eee;text-align:left;font-size:14px;vertical-align:top}
+.tag{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:700}
+.in,.ingreso{background:#e7f6ec;color:#176b35}.out,.devolucion{background:#fff0e5;color:#9a4b00}
+.admin-tag{background:#e0e7ff;color:#3730a3}.user-tag{background:#eef2f6;color:#475569}
+.empty{text-align:center;color:#667085;padding:30px}
+.modal{position:fixed;inset:0;background:#0008;display:grid;place-items:center;padding:20px;z-index:20}
+.modal .card{width:min(500px,100%)}
+.error{color:#b42318;font-size:13px;margin-top:8px}
+.notice{padding:10px 12px;background:#fff7ed;color:#9a3412;border-radius:10px;font-size:13px;margin:14px 0}
+.switchline{margin-top:18px}.switch{color:#1261a0;cursor:pointer;font-weight:700}
+.top-actions,.actions{display:flex;gap:8px;align-items:center}
+.actions{justify-content:flex-end;margin-top:16px}
+.small{font-size:12px;color:#667085}.user-name{color:#dbeafe}
+.admin-badge{font-size:11px;font-weight:800;padding:5px 8px;border-radius:999px;background:#c7d2fe;color:#312e81}
+.row-actions{white-space:nowrap}.small-btn{padding:7px 10px;font-size:12px}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;word-break:break-all}
+.chart-card{overflow:hidden}.chart-wrap{width:100%;overflow-x:auto;padding:6px 4px 0}
+.capital-chart{display:block;width:100%;min-width:680px;height:auto;overflow:visible}
+.capital-chart text{font:12px system-ui,-apple-system,Segoe UI,sans-serif;fill:#64748b}
+.gridline{stroke:#e5e7eb;stroke-width:1}.axis{stroke:#cbd5e1;stroke-width:1}
+.line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.income-line{stroke:#16834b}.return-line{stroke:#d97706}
+.income-point{fill:#16834b;stroke:#fff;stroke-width:2}.return-point{fill:#d97706;stroke:#fff;stroke-width:2}
+.chart-legend{display:flex;gap:22px;flex-wrap:wrap;padding:4px 8px 12px;font-size:13px;color:#475569}
+.legend-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px}
+.legend-dot.income{background:#16834b}.legend-dot.return{background:#d97706}
+.chart-empty{padding:32px 12px;color:#64748b;text-align:center;border:1px dashed #cbd5e1;border-radius:12px}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.businessbar{grid-template-columns:1fr}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.appbar{padding:12px 14px}.wrap{padding:0 12px}.metric .value{font-size:22px}.user-name{display:none}.top-actions{gap:5px}}
+@media(max-width:700px){.capital-chart{min-width:620px}.chart-legend{font-size:12px}}
